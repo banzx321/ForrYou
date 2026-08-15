@@ -14,7 +14,13 @@
 
         body {
             margin: 0;
-            background-color: var(--bg);
+            /* Tambahan background gambar dari link dengan overlay hitam transparan */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                              url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             color: white;
             font-family: 'Montserrat', sans-serif;
             overflow-x: hidden;
@@ -60,7 +66,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: radial-gradient(circle, #1a1a1a 0%, #050505 100%);
+            background: radial-gradient(circle, rgba(26, 26, 26, 0.5) 0%, rgba(5, 5, 5, 0.8) 100%);
         }
 
         h1 {
@@ -159,7 +165,7 @@
 
     <div class="content-wrapper">
         <div class="romance-text">
-    Untuk Mu Tasytiani 
+            Untuk Mu Tasytiani 
             Mungkin kata-kata hanyalah rangkaian huruf yang terbatas, namun perasaanku padamu adalah sebuah semesta yang tak punya garis tepi.
             <span class="highlight">— Awal dari Segalanya —</span>
         </div>
